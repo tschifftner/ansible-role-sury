@@ -1,4 +1,7 @@
 ---
 
+sury_apt_key: ''
+sury_apt_packages: []
+
 sury_apt_repositories:
   - ppa:ondrej/php
