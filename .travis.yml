@@ -46,7 +46,7 @@ script:
   # ansible-lint checks for best practice
   - ansible-lint tests/$SITE
 
-  - apt-cache search php7.1-fpm | grep php7.1-fpm
+  - sudo apt-cache search php7.1-fpm | grep php7.1-fpm
 
 after_failure:
   - ansible-playbook -i tests/inventory tests/$SITE --connection=local --sudo
