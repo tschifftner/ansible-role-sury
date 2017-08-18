@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/tschifftner/ansible-role-sury.svg)](https://travis-ci.org/tschifftner/ansible-role-sury)
 
-Installs sury from source on Debian/Ubuntu linux servers.
+Installs sury repositories on Debian/Ubuntu linux servers. More information can be found on [deb.sury.org](https://deb.sury.org/)
 
 ## Requirements
 
