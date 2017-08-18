@@ -1,0 +1,4 @@
+---
+
+sury_apt_repositories:
+  - ppa:ondrej/php

@@ -1,0 +1,31 @@
+---
+
+- name: Include debian variables
+  include_vars: debian.yml
+  when: ansible_distribution == 'Debian'
+
+- name: Include ubuntu variables
+  include_vars: ubuntu.yml
+  when: ansible_distribution == 'Ubuntu'
+
+- name: Install apt packages
+  apt:
+    pkg: '{{ item }}'
+    state: present
+  with_items: '{{ sury_apt_packages }}'
+  when: sury_apt_packages is defined and sury_apt_packages|length
+
+- name: Install sury key
+  apt_key:
+    url: '{{ sury_apt_key }}'
+    state: present
+  when: sury_apt_key is defined and sury_apt_key  != ''
+
+- name: Add sury repositories
+  apt_repository:
+    repo: "{{ item }}"
+    state: present
+    update_cache: yes
+    filename: 'sury'
+  with_items: '{{ sury_apt_repositories }}'
+  when: sury_apt_repositories is defined and sury_apt_repositories|length
