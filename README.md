@@ -1,12 +1,12 @@
 # Ansible Role: Install sury
 
-[![Build Status](https://travis-ci.org/tschifftner/ansible-role-sury.svg)](https://travis-ci.org/tschifftner/ansible-role-sury)
+[![Build Status](https://travis-ci.org/tschifftner/ansible-role-sury.svg?branch=master)](https://travis-ci.org/tschifftner/ansible-role-sury)
 
-Installs sury repositories on Debian/Ubuntu linux servers. More information can be found on [deb.sury.org](https://deb.sury.org/)
+Installs sury repositories on Debian and ppa:ondrej/php on Ubuntu linux servers. More information can be found on [deb.sury.org](https://deb.sury.org/)
 
 ## Requirements
 
-ansible 1.8+
+ansible 2.1+
 
 ## Role Variables
 
@@ -16,6 +16,9 @@ Available variables are listed below, along with default values (see `defaults/m
 sury_install_repositories: Yes
 
 sury_apt_key: 'http://www.sury.org/sury.gpg'
+
+sury_apt_packages:
+ - apt-transport-https
 
 sury_apt_repositories:
  - 'deb http://packages.sury.org {{ ansible_distribution_release }} all'
@@ -39,13 +42,12 @@ $ ansible-galaxy install tschifftner.sury
         - { role: tschifftner.sury }
 
 ## Supported OS
-Ansible          | Debian Jessie    | Ubuntu 14.04*
-:--------------: | :--------------: | :-------------:
-2.1              | Yes              | Yes
-2.2              | Yes              | Yes
-2.3              | Yes              | Yes
 
-*) The packages from Dotdeb should work on Ubuntu, but no additional support will be provided.
+ - Debian 9 (Stretch)
+ - Debian 8 (Jessie)
+ - Ubuntu 18.04
+ - Ubuntu 16.04
+ - Ubuntu 14.04
 
 ## License
 
