@@ -3,4 +3,4 @@
   become: true
 
   roles:
-    - ansible-role-sury
+    - role_under_test

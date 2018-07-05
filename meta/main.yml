@@ -11,6 +11,15 @@ galaxy_info:
   - name: Debian
     versions:
     - jessie
+  - name: Ubuntu
+    versions:
+      - 18.04
+      - 16.04
+      - 14.04
   galaxy_tags:
     - debian
     - sury
+    - ubuntu
+    - php
+    - php-fpm
+    - repository
