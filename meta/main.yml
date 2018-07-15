@@ -8,14 +8,16 @@ galaxy_info:
   license: MIT
   min_ansible_version: 2.1
   platforms:
+  platforms:
   - name: Debian
     versions:
-    - jessie
+    - 8 (Jessie)
+    - 9 (Stretch)
   - name: Ubuntu
     versions:
-      - 18.04
-      - 16.04
-      - 14.04
+    - 14.04 (Trusty Tahr)
+    - 16.04 (Xenial Xerus)
+    - 18.04 (Bionic Beaver)
   galaxy_tags:
     - debian
     - sury
