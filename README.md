@@ -47,7 +47,6 @@ $ ansible-galaxy install tschifftner.sury
  - Debian 8 (Jessie)
  - Ubuntu 18.04 (Bionic Beaver)
  - Ubuntu 16.04 (Xenial Xerus)
- - Ubuntu 14.04 (Trusty Tahr)
  
 ## Required ansible version
 
