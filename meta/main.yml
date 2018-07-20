@@ -6,18 +6,18 @@ galaxy_info:
   description: Installs sury repository for php7.x on Debian/Ubuntu linux servers.
   company: ambimax® GmbH
   license: MIT
-  min_ansible_version: 2.1
-  platforms:
+  role_name: sury
+  min_ansible_version: 2.5
   platforms:
   - name: Debian
     versions:
-    - 8 (Jessie)
-    - 9 (Stretch)
+    - jessie
+    - stretch
   - name: Ubuntu
     versions:
-    - 14.04 (Trusty Tahr)
-    - 16.04 (Xenial Xerus)
-    - 18.04 (Bionic Beaver)
+    - trusty
+    - xenial
+    - bionic
   galaxy_tags:
     - debian
     - sury
