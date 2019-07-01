@@ -13,7 +13,7 @@ env:
   - distro: debian8
   - distro: ubuntu1804
   - distro: ubuntu1604
-  - distro: ubuntu1404
+#  - distro: ubuntu1404 There is no support for php7
 
 
 script:
